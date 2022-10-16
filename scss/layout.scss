@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+@import "./utils";
+@import url("./reset.css");
+@import url("./normalize.css");
+@import url("./common.css");
+
+@font-face {
+    font-family: 'apple';
+    src: url('../fonts/SFProKRDisplay_light.woff2') format('woff2'); 
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'apple';
+    src: url('../fonts/SFProKRDisplay_regular.woff2') format('woff2'); 
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'apple';
+    src: url('../fonts/SFProKRDisplay_medium.woff2') format('woff2'); 
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'apple';
+    src: url('../fonts/SFProKRDisplay_semibold.woff2') format('woff2'); 
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'apple';
+    src: url('../fonts/SFProKRDisplay_bold.woff2') format('woff2'); 
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'NeueBit';
+    src: url('../fonts/NeueBit-Regular.woff2') format('woff2');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'NeueBit';
+    src: url('../fonts/NeueBit-Bold.woff2') format('woff2');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Social-Gothic-Bold';
+    src: url('../fonts/Social-Gothic-Bold2.woff') format('woff');
+}
+
+
+
+body {
+    overflow-x: hidden;
+    background-image: url(../images/background.png);
+    color: #cec9c9;
+    font-family: 'apple', sans-serif;
+    min-width: 1300px;
+    word-break: keep-all;
+    cursor: none;
+}
+
+
+
+
+header {
+    position: fixed;
+    top: 0;left: 0;
+    z-index: 10;
+    width: 100%;
+    .gauge{
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        .curr{
+            width: 00%;
+            height: 100%;
+            background: #BC302F;
+        }
+    }
+    h1 {
+        position: relative;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 15px;
+        font-family: 'Montserrat', sans-serif;
+        color: #BC302F;
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+}
+
+
+
+
+footer {
+    background: #f8f6f0;
+    padding-top: 10vh;
+    h3 {
+        font-family: 'Social-Gothic-Bold';
+        font-size: 10vw;
+        display: flex;
+        align-items: center;
+        padding-left: 3vw;
+        span {
+            opacity: 0;
+            transform: translateY(-100%);
+            color: #BC302F;
+            margin-right: 3vw;
+        }
+        svg {
+            opacity: 1;
+            width: 10vw;
+            height: 10vw;
+            margin-left: 2vw;
+            g {
+                g {
+                    fill: #BC302F;
+                }
+                circle {
+                    stroke: #BC302F;
+                }
+            }
+        }
+    }
+
+
+    .footer-wrap {
+        padding-left: 5vw;
+        padding-bottom: 10vh;
+        .contact-btn {
+            position: relative;
+            padding-top: 5vh;
+            overflow: hidden;
+        }
+        a {
+            font-family: 'Social-Gothic-Bold';
+            font-size: 10vw;
+            display: inline-block;
+            transform: translateX(-100%);
+            &::after {
+                position: absolute;
+                content: '';
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background:#BC302F;
+                transition: all linear 0.5s;
+            }
+            &:hover::after {
+                width: 40vw;
+            }
+        }
+    }
+
+    .copy {
+        padding: 1vw;
+    }
+}

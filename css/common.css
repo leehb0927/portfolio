@@ -1,0 +1,45 @@
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  margin: -1px;
+}
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  z-index: 999;
+  pointer-events: none;
+  border: 1px solid #BC302F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cursor span {
+  display: none;
+}
+.cursor.active {
+  background: #fff;
+  border: 5px solid #BC302F;
+}
+.cursor.active span {
+  font-family: "NeueBit";
+  font-weight: 700;
+  font-size: 3vw;
+  color: #BC302F;
+  display: block;
+}
+
+a {
+  cursor: none;
+}
+
+button {
+  cursor: none;
+}

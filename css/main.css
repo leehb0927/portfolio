@@ -1,0 +1,234 @@
+@charset "UTF-8";
+:root {
+  --font-h1: 50px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* 브라우저 사이즈 768px이상, 1023px이하 일때,*/
+}
+@media (max-width: 767px) {
+  /* 브라우저 사이즈 768px이상, 1023px이하 일때,*/
+}
+/*반응형 화면 크기*/
+/*반응형, 브라우저 크기가 768이상, 1023px 이하일때*/
+/*반응형, 브라우저 크기가 767px 이하일때*/
+/*반응형, 브라우저 크기가 768이상, 1023px 이하일때*/
+/*반응형, 브라우저 크기가 1024px 이상일때*/
+.sc_intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.sc_intro h2 {
+  font-size: 7vw;
+  line-height: 1.2;
+  font-weight: 300;
+  text-align: center;
+  color: #362724;
+}
+.sc_intro h2 .bold {
+  font-weight: 600;
+}
+.sc_intro h2 .en {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #BC302F;
+}
+
+.sc_introduce {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.sc_introduce .chat_wrap {
+  margin: 100px 0;
+  display: flex;
+  width: 60vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+.sc_introduce .chat_wrap .chat_title {
+  font-size: 8vw;
+  line-height: 1;
+  font-family: "Social-Gothic-Bold";
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.sc_introduce .chat_wrap .chat_title span {
+  color: #BC302F;
+}
+.sc_introduce .chat_wrap .msg {
+  position: absolute;
+  z-index: 1;
+  padding: 20px;
+  border-radius: 30px;
+  text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.3);
+  color: #362724;
+  font-size: 40px;
+  line-height: 1;
+  font-family: "NeueBit";
+  font-weight: 700;
+}
+.sc_introduce .chat_wrap .msg.chat1 {
+  top: 0;
+  left: 0;
+  transform: rotate(-45deg);
+}
+.sc_introduce .chat_wrap .msg.chat2 {
+  top: 0;
+  right: 0;
+  transform: rotate(35deg);
+}
+.sc_introduce .chat_wrap .msg.chat3 {
+  top: 40%;
+  left: 0;
+  transform: rotate(-5deg);
+}
+.sc_introduce .chat_wrap .msg.chat4 {
+  top: 50%;
+  right: 0;
+  transform: rotate(-10deg);
+}
+.sc_introduce .chat_wrap .msg.chat5 {
+  top: 100%;
+  left: 0;
+  transform: rotate(25deg);
+}
+.sc_introduce .chat_wrap .msg.chat6 {
+  top: 100%;
+  right: 0;
+  transform: rotate(15deg);
+}
+.sc_introduce .info {
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  margin: 40vh 0 0 0;
+  padding-top: 20vh;
+  background: #BC302F;
+  position: relative;
+  z-index: 1;
+}
+.sc_introduce .info .txt-area1, .sc_introduce .info .txt-area2 {
+  position: absolute;
+}
+.sc_introduce .info .txt-area1 .txt-box, .sc_introduce .info .txt-area2 .txt-box {
+  white-space: nowrap;
+  display: flex;
+}
+.sc_introduce .info .txt-area1 .txt-box span, .sc_introduce .info .txt-area2 .txt-box span {
+  position: absolute;
+  font-family: "Social-Gothic-Bold";
+  font-size: 10vw;
+}
+.sc_introduce .info .txt-area1 span {
+  color: #fff;
+  transform: translateX(3vw);
+}
+.sc_introduce .info .txt-area2 {
+  top: 50%;
+}
+.sc_introduce .info .txt-area2 span {
+  color: #362724;
+}
+
+.sc_works {
+  margin-top: 150px;
+  padding: 0 50px;
+}
+.sc_works .work {
+  height: 100vh;
+  border-bottom: 1px solid #cec9c9;
+  padding: 10vw 0;
+}
+.sc_works .work:last-child {
+  border-bottom: 1px solid #BC302F;
+}
+.sc_works .work .desc_wrap {
+  display: flex;
+  height: 100%;
+}
+.sc_works .work .desc_wrap .desc {
+  flex: 1 0 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sc_works .work .desc_wrap .desc h2 {
+  font-size: 6vw;
+  line-height: 1;
+  font-weight: 600;
+  position: relative;
+  color: #362724;
+}
+.sc_works .work .desc_wrap .desc p {
+  padding-top: 5vh;
+  max-width: 700px;
+  font-size: 28px;
+  line-height: 1.5;
+  padding-right: 50px;
+  color: #362724;
+}
+.sc_works .work .desc_wrap .desc .skill {
+  font-size: 2vw;
+  font-family: "NeueBit";
+  font-weight: 500;
+  padding-top: 5vh;
+}
+.sc_works .work .desc_wrap .desc .skill span {
+  display: inline-block; /* 
+border-bottom: 1px solid #362724; */
+  margin-right: 1vw;
+}
+.sc_works .work .desc_wrap .desc .btn-wrap {
+  padding-top: 30vh;
+}
+.sc_works .work .desc_wrap .desc .btn-wrap .view-link {
+  font-family: "NeueBit";
+  font-weight: 700;
+  font-size: 3vw;
+  display: inline-block;
+  background: #BC302F;
+  color: #fff;
+  padding: 0.3vw 2vw;
+  border-top-right-radius: 1.5rem;
+  transition: 0.3s;
+}
+.sc_works .work .desc_wrap .desc .btn-wrap .view-link.active {
+  background: #362724;
+}
+.sc_works .work .desc_wrap .img_wrap {
+  flex: 1 0 50%;
+  position: relative;
+  overflow: hidden;
+}
+.sc_works .work .desc_wrap .img_wrap img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.back_top {
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  padding: 35px 55px 35px 35px;
+  font-family: "Montserrat", "apple", sans-serif;
+  color: #cec9c9;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  z-index: 10;
+}
